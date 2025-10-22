@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block contenido %}
+
+<style>
+    body{
+        overflow-y: hidden;
+        background: #FDDCA9;
+    }
+
+    main{
+        background: #FDDCA9;
+    }
+</style>
+
+<main>
+    <form action="" method="POST" enctype="multipart/form-data" class="soundForm">
+        <div class="title-upload"><p>Subir un nuevo sonido</p></div>
+        <div class="uno">
+            <div class="btnUpload">
+                <label for="id_Subida">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 8l-5-5-5 5M12 4.2v10.3"/></svg>   
+                </label>
+                <input type="file" name="" id="id_Subida">
+            </div>
+            <div class="soundNameColor">
+                <input disabled type="text" name="" id="" placeholder="2835134918247.mp3">
+                <input type="text" name="" id="" placeholder="Nombre del sonido:">
+                <input type="color" name="" id="">
+            </div>
+        </div>
+        <div>
+            <button>Agregar sonido</button>
+        </div>
+    </form>
+</main>
+
+{% endblock contenido %}

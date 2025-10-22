@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Grotesk';
+    src: url(../src/URWGroteskSCRegular.ttf);
+}
+
+@font-face {
+    font-family: 'Trade';
+    src: url(../src/tradegothic.otf);
+}
+
+header{
+    height: 100px;
+    background: #472212;
+    border-top: 2px solid #FDDCA9;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+header nav ul{
+    font-family: 'Grotesk', sans-serif;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #FDDCA9;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-links li{
+    transition: all .1s ease;
+}
+
+.navbar-links li:hover{
+    transform: scale(1.1);
+}
+
+.navbar-links a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.menu a:hover{
+    background: #E76219;
+    color: #FFF;
+}
+
+.menu a{
+    padding: 20px;
+    border-radius: 500px;
+    transition: background .2s ease;
+}
+
+main{
+    background: #4f2715;
+}
+
+.logo-home{
+    height: 250px;
+}
+
+.inicio{
+    padding: 75px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.inicio p{
+    font-size: 65px;
+    color: #FDDCA9;
+    font-family: 'Trade', sans-serif;
+}
+
+.btn-listen{
+    position: absolute;
+    background: #E76219;
+    color: #4f2715;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    bottom: 75px;
+    left: 0;
+    right: 0;
+}
+
+.now-playing{
+    background: #FDDCA9;
+    padding-top: 50px;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.mySlides{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background: #000000;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.prev{
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.title-now-playing{
+    text-align: center;
+    font-family: 'Trade', sans-serif;
+    font-size: 40px;
+    color: #4f2715;
+    margin-bottom: 10px;
+}
+
+.info-now-playing{
+    text-align: center;
+    font-family: 'Grotesk', sans-serif;
+    font-size: 20px;
+    color: #4f2715;
+    margin-bottom: 30px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 6% !important;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border: 4px solid #FDDCA9;
+    width: fit-content;
+    padding: 20px 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 6px #000;
+    outline: #FFF 4px solid;
+}
+
+.forminner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trade';
+    gap: 10px;
+}
+
+.forminner div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-text p{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trade';
+}
+
+.title1{
+    font-family: 'Grotesk' !important;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.login-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.forminner div input{
+    padding: 10px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    box-shadow: 3px 3px #000;
+    transition: box-shadow .1s ease, transform .1s ease;
+}
+
+.forminner div label{
+    font-family: 'Trade';
+    color: #000;
+}
+
+.forminner div input:focus-visible{
+    outline: none;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.buttons button{
+    background: #C21717;
+    border: none;
+    padding: 25px 50px;
+    border-radius: 100px;
+    color: #FFF;
+    font-family: 'Grotesk';
+    border: 2px solid #000;
+    box-shadow: 3px 3px #000;
+    transition: box-shadow .1s ease, transform .1s ease;
+}
+
+.buttons button:active{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+#id_Subida{
+    display: none;
+}
+
+.soundNameColor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soundForm{
+    background: #FFF;
+    width: 50%;
+    margin: auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+    border: 4px solid #FDDCA9;
+    outline: #FFF solid 3px;
+    border-radius: 25px;
+}
+
+.uno{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.btnUpload{
+    display: flex;
+    align-items: center;
+}
+
+.btnUpload label{
+    background: #C21717;
+    border-radius: 100px;
+    padding: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px #000;
+    transition: transform .1s ease, box-shadow .1s ease;
+}
+
+.btnUpload label:active{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.soundNameColor input[type=text]{
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    box-shadow: 3px 3px #000000;
+    background: #FFF;
+    transition: box-shadow .1s ease, transform .1s ease;
+}
+
+.soundNameColor input[type=text]:focus-within, .soundNameColor input[type=text]:active{
+    outline: none;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.soundForm div button{
+    background: #C21717;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px #000000;
+    padding: 10px;
+    border-radius: 100px;
+    color: #FFF;
+    font-family: 'Grotesk';
+    font-size: 20px;
+    transition: transform .1s ease, box-shadow .1s ease;
+}
+
+.soundForm div button:active{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.title-upload p{
+    font-family: 'Grotesk';
+    font-size: 25px;
+}

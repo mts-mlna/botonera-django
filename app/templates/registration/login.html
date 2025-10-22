@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block contenido %}
+
+<style>
+    body{
+        overflow-y: hidden;
+        background: #FDDCA9;
+    }
+</style>
+
+<main style="background: #FDDCA9; height: 100%;">
+    <form action="" method="POST" class="login-form">
+        <div class="login-text">
+            <p class="title1">INICIAR SESIÓN</p>
+            <p>Ingresa tu nombre de usuario y contraseña para continuar</p>
+        </div>
+        <div class="forminner">
+            {% csrf_token %}
+            {% for field in form %}
+            <div>
+                {{ field.label_tag }}
+                {{ field }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="buttons">
+            <button type="submit">INGRESAR</button>
+        </div>
+    </form>
+</main>
+
+{% endblock contenido %}

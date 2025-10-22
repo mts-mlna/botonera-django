@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'src/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar-links">
+                <li><a href="{% url 'login' %}">INICIO</a></li>
+                <li><a href="">INFORMACIÓN</a></li>
+                <li><a href="">SOPORTE</a></li>
+                <li><a href="">PROGRAMA</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+            <ul>
+                <li class="menu"><a href="javascript:void(0)">☰</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block contenido %}
+    <main>
+        <section>
+            <article class="inicio">
+                <img src="{% static 'src/favicon.png' %}" alt="" class="logo-home">
+                <p>BIENVENIDO<br>AL SONIDO<br>DE LOS 80</p>
+            </article>
+            <a href="" class="btn-listen">ESCUCHAR EN VIVO</a>
+        </section>
+        <section class="now-playing">
+            <article class="title-now-playing">
+                <h1>¡MANTENEMOS A LOS 80 CON VIDA!</h1>
+            </article>
+            <article class="info-now-playing">
+                <p>Canciones desde 1978-1991</p>
+            </article>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="{% static 'src/images/b52s.jpg' %}" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'src/images/Depeche-Mode-2.jpg' %}" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'src/images/knack2.jpg' %}" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'src/images/making-time2.jpg' %}" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'src/images/smiths.jpg' %}" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'src/images/the-church.jpg' %}" alt="" style="width: 100%;">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>  
+        </section>
+    </main>
+    {% endblock %}
+    <footer>
+        
+    </footer>
+</body>
+<script src="{% static 'javascript/slideshow.js' %}"></script>
+</html>
