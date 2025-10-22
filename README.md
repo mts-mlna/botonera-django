@@ -1,0 +1,1 @@
+Este sitio, realizado en el framework Django y lenguaje de programación de Python, es una botonera para una estación de radio ficticia llama "FM 80s", que se dedica a pasar canciones rock de los años 80 y 90 como Queen, Guns N' Roses, AC/DC, KISS, entre otros
